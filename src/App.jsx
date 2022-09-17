@@ -3,9 +3,10 @@ import CustomForm from './components/CustomForm'
 
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [tasks, setTasks] = useState([]);
 
   const addTask  = (task) => {
+    setTasks(prevState => [...prevState,task])
     console.log(task)
   }
 
