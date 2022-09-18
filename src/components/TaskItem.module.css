@@ -25,18 +25,19 @@
 
 .checkbox {
   flex-shrink: 0;
-  appearance: 0;
+  appearance: none;
   border-radius: var(--_radius);
   width: 1em;
   height: 1em;
   background-color: hsl(var(--muted));
-  box-shadow: 0 0 0 0.05em hsl(var(--accent) / 0.5);
-  box-shadow: 0 0 0 0.02em hsl(var(--accent) / 0.5);
-  transition: box shadow var(--_tspeed_fast) ease-in-out,
+  border-radius: var(--_radius);
+  box-shadow: 0 0 0.5em hsl(var(--accent) / 0.1),
+    0 0 0 0.05em hsl(var(--accent) / 0.5), 0 0 0 -0.2em hsl(var(--accent));
+  transition: box-shadow var(--_tspeed_fast) ease-in-out,
     background-color 80ms ease-in-out;
 }
 
-.checkbox :focus {
+.checkbox:focus {
   outline: none;
 }
 
@@ -59,6 +60,12 @@
   transition: background-color 80ms ease-in-out;
 }
 
+.checkmark i {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
 .checkbox:checked {
   background-color: hsl(var(--accent));
 }
@@ -67,14 +74,8 @@
   text-decoration: line-through;
 }
 
-.checkmark svg {
-  width: 0.75em;
-  height: 0.75em;
-}
-
 .delete {
-  --accent: var(--accent);
-  /* color: red; */
+  --accent: var(--accent1);
 }
 
 .loading {

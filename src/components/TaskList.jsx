@@ -1,19 +1,19 @@
 import TaskItem from './TaskItem';
 import styles from './TaskList.module.css';
 
-const TaskList = ({tasks}) => {
-  return (
-    <ul className={styles.tasks}>
-      {
-        tasks.map(task => ( 
+const TaskList = ({ tasks, deleteTask, toggleTask }) => (
+  <ul className={styles.tasks}>
+    {
+        tasks.map((task) => (
           <TaskItem
             key={task.id}
             task={task}
-          />  
+            deleteTask={deleteTask}
+            toggleTask={toggleTask}
+          />
         ))
       }
-    </ul>
-  )
-}
+  </ul>
+);
 
-export default TaskList
+export default TaskList;
