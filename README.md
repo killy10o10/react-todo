@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Quami-Killy-blue)
 
 # React Todo
 
@@ -72,8 +72,6 @@ Contributions, issues, and feature requests are welcome!
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-- Hat tip to Microverse's code reviewers and to everyone who reviewed my project and made suggestions.
 
 ## 📝 License
 
